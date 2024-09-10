@@ -95,20 +95,5 @@ for (let i = 0; i < navigationLinks.length; i++) {
   });
 }
 
-// Select all social items
-const socialItems = document.querySelectorAll('.social-list-insta');
 
-// Define a function to handle redirection
-function handleRedirection(event) {
-  // Prevent the default behavior of the link
-  event.preventDefault();
-
-  // Open the link in a new tab
-  window.open(this.href, '_blank');
-}
-
-// Add click event listener to each social item
-socialItems.forEach(item => {
-  item.addEventListener('click', handleRedirection);
-});
 
